@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+	<CheckBoxPreference
+	    android:key="master_power"
+	    android:title="Enable Seek Asik"
+	    android:defaultValue="true"	    
+	    android:summary="Master power for Seek Asik">
+	</CheckBoxPreference>
+	
+	<CheckBoxPreference
+	    android:key="random_seek"
+	    android:title="Random Seek"
+	    android:defaultValue="false"	    
+	    android:summary="Use random time to seek">
+	</CheckBoxPreference>
+	
+	<EditTextPreference
+	    android:key="time_to_seek"
+	    android:title="Time to seek"	    
+	    android:summary="Time to seek in second. 60 means 60 seconds"
+	    android:defaultValue="45">	    
+	</EditTextPreference>	
+	
+	<CheckBoxPreference
+	    android:key="random_by_duration"
+	    android:title="Use Random by Duration"
+	    android:defaultValue="true"	    
+	    android:summary="If enabled, app will randomize time by duration. Otherwise, randomizing will be done by percentage">
+	</CheckBoxPreference>
+		
+	<EditTextPreference
+	    android:key="random_duration"
+	    android:title="Duration Format"	    
+	    android:summary="Use dash as interval. 30-60 means random time will be greater than 30 and less than 60 seconds"
+	    android:defaultValue="30-90">	    
+	</EditTextPreference>
+	
+	<EditTextPreference
+	    android:key="random_percentage"
+	    android:title="Percent Format"	    
+	    android:summary="Use dash as interval. 10-20 means random time will be greater than 10% and less than 20% relative by duration of current song"
+	    android:defaultValue="10-20">	    
+	</EditTextPreference>
+	
+	<Preference
+        android:key="about"
+        android:title="Seek Asik"
+        android:summary="(c) 2014, Asep Saepudin.\nIcon by Freepik@flaticon.com">            
+	</Preference>
+
+		
+</PreferenceScreen>
